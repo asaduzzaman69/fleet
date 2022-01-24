@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
 html,
 body {
@@ -18,4 +16,144 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.logo {
+  background-image: url(../src/assets/download.svg);
+  width: 106px;
+  height: 36px;
+  margin-right: 40px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.menuitem {
+  color: #777e90;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  padding-left: 50px;
+  font-family: 'DM sans', sans-serif;
+  border-left: 1px solid #e6e8ec;
+}
+.travelers:hover {
+  color: #23262f;
+  cursor: pointer;
+}
+
+.support {
+  margin-left: auto;
+  cursor: pointer;
+}
+.support:hover,
+.support:active {
+  color: #23262f;
+}
+
+.language {
+  padding-inline: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.language:active,
+.language:hover {
+  color: #23262f;
+}
+.language:hover g {
+  fill: #23262f;
+}
+
+.language p {
+  margin-left: 10px;
+}
+
+.user {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  margin-left: 5px;
+  border-radius: 10px;
+  background-image: url(../src//assets/user.svg);
+  background-color: #58c27d;
+}
+
+.user:hover {
+  background-color: #41b168;
+}
+
+.btn {
+  background: none;
+  border: none;
+  font-size: 14px;
+}
+
+.btn:hover,
+.btn:active {
+  background: #23262f;
+  box-shadow: 0 0 0 2px #23262f inset;
+  color: #fcfcfd;
+}
+
+.list {
+  color: #272b36;
+  border-radius: 20px;
+  padding: 0 16px;
+  height: 40px;
+  box-shadow: 0 0 0 2px #e6e8ec inset;
+  font-family: 'DM sans', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.list:hover,
+.list:active {
+  color: #fcfcfd;
+  background-color: #23262f;
+}
+
+.notification {
+  background-color: white;
+  width: 35px;
+  height: 50px;
+  margin-inline: 1.5rem;
+  cursor: pointer;
+  border: none;
+  position: relative;
+}
+
+.notification:active path,
+.notification:hover path {
+  fill: #23262f;
+}
+.notification::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #58c27d;
 }
