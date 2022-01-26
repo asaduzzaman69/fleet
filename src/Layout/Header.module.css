@@ -1,0 +1,42 @@
+.menuitem {
+  color: #777e90;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  text-transform: none;
+  font-weight: 700;
+  font-family: 'DM sans', sans-serif;
+
+  cursor: pointer;
+}
+
+.menuitem:hover {
+  color: #23262f;
+}
+
+.btn {
+  background: none;
+  border: none;
+}
+
+.btn:hover,
+.btn:active {
+  background: #23262f;
+  box-shadow: 0 0 0 2px #23262f inset;
+  color: #fcfcfd;
+}
+
+.notification {
+  position: relative;
+}
+
+.notification::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  right: 27px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #58c27d;
+}
